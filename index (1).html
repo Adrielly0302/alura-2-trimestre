@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span></label>
+
+      <h1>MUITO BEM VINDO AO NOSSO SITE!</h1>
+      <img src="Lupa.svg" alt="Lupa.svg" class="cLupa.svg">
+    </div>
+      <a href="#"><img src="Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante os seus livros favoritos!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Lançamentos Famosos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="assim que acaba.jpeg"><img src="assim que acaba.jpeg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="comeca.jpeg"><img src="comeca.jpeg"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="egunda chanche.jpeg"><img src="segunda chanche.jpeg" alt="segunda chanche.jpeg">
+        </div>
+        <div class="swiper-slide">
+          <img src="download.jpeg" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="Portugol.svg" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="BOOK.jpeg" alt="BOOK.jpeg" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+        </div>
+        <img src="compar 2.png" class="compar 2.png" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Compre em nosso site!</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="verity.jpg"><img src="verity.jpg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="sdownload.jpeg"><img src="BOOK.jpeg" alt="BOOK.jpeg">
+    
+        
+        
+        
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Collen Hoover</h2>
+          <p class="descrição__texto"> Collen Hoover autora de "É assim que acaba", Acaba de lançar a adaptação do livro. Filme foi um  sucesso nos cinemas.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="Colleen-Hoover.webp" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">É Assim Que Abaca</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">É Assim Que Começa</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Até o Verão Terminar</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">O Lado Feio Do Amor</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Uma Segunda Chanche</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Verity</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Todas As Suas (im)perfeições</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">As Mil Partes Do Meu Coração</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <img src="Usuario.svg" alt="Usuario.svg">
+    <h2 class="rodapé__titulo">Adrielly Soares Brigante</h2>
+  </footer>
+  </script>
+</body>
+
+</html>
